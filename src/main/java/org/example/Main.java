@@ -110,6 +110,7 @@ public class Main {
         //Stream operations are either intermediate or terminal.
         //Intermediate - map, filter, sorted, distinct
         //Terminal - forEach, collect, reduce, count, anyMatch, allMatch, noneMatch, findFirst, findAny
+        //We can create a stream from a collection using stream() method
 
         List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
         List<Integer> doubled = numbers.stream().map(i -> i*2).toList();
