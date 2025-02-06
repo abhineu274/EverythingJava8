@@ -1,6 +1,7 @@
 package org.example;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -154,6 +155,7 @@ public class Main {
         Employee e3 = new Employee("Doe", 35);
 
         List<Employee> employees = Arrays.asList(e1, e2, e3);
+        List<Employee> emp3 = new ArrayList<>();
         employees.sort((emp1, emp2) -> emp1.getName().compareTo(emp2.getName()));
         employees.forEach(System.out::println);
 
